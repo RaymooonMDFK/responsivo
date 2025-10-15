@@ -144,21 +144,46 @@ figcaption{
 }
 
 @media only screen and (max-width:800px) {
-  /* For tablets: */
-  header {
-    width: 100%;
-  }
-  main {
-    width: 100%;
-  }
-
-  footer{
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
   header, main, footer {
     width: 100%;    
   }
+}
+@media only screen and (max-width:500px) {
+  header, main, footer {
+    width: 100%;    
+  }
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #002B5B;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 180px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .25);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.25s ease;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a:hover {
+    background: #0056b3;
 }
