@@ -158,7 +158,7 @@ figcaption{
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  header, main, footer {
     width: 100%;    
   }
 }
