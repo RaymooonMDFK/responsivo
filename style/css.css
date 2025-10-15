@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+main {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 800px;
+}
+
+section {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-margin-top: 80px;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
+}
+
+p>b {
+    color: #00BFFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.temas_de_aprendizaje p>b {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-top: 1rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer_linea {
+    width: 40%;
+    height: 1px;
+    background-color: #333;
+}
+
+.img1 {
+    width: 100px;
+}
+
+.img2 {
+    width: 100px;
+    margin-left: 1rem;
+}
+
+.video_container {
+    display: flex;
+    border: none;
+    border-radius: 12px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    background-color: #1e1e1e;
+    padding: 1rem 0;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #00BFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #1e90ff;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    gap: 1rem;
+    padding: 1rem;
+}
+.encabezado {
+    text-align: center;
+}
+
+.menu_container {
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+background-color: #121212;
+width: 100%;
+z-index: 2 ;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;    
+  }
+}
